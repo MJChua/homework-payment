@@ -19,7 +19,7 @@
         </div>
         <div class="nav-content flex-row">
           <div class="nav-timer flex-col">
-            <div @click="onClick()" class="nav-timer-text">
+            <div @click.once="onClick()" class="nav-timer-text">
               <span v-if="type === 'Date'">日期 {{ day }}</span>
               <span v-else>將在 {{ time }} 後結束</span>
             </div>
@@ -129,6 +129,7 @@ export default {
   .flex-col
     display flex
     flex-direction column
+    text-align center
   .flex-row
     display flex
     flex-direction row
@@ -216,6 +217,8 @@ export default {
     align-items center
     .step-wrapper
       padding-top 30px
+      display flex
+      flex-direction row
       justify-content center
       .step-content
         align-items center
