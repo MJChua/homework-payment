@@ -123,7 +123,7 @@ export default {
 <style lang="stylus">
 .navigator
   margin-bottom 63px
-  // Common
+  // Common Css
   .left
     text-align left
   .flex-col
@@ -135,10 +135,10 @@ export default {
     flex-direction row
   .mr-48
     margin-right 48px
-  // Common End
+  // Common Css End
 
   .nav-wrapper
-    padding 11px 147px
+    padding 11px 147px 0 147px
     align-items center
     justify-content space-between
     .nav-text
@@ -155,10 +155,9 @@ export default {
           color #333333
       .nav-item
         align-items center
-        margin-right 166px
         .item
-          width 36px
-          height 24px
+          // width 36px
+          // height 24px
           font-size 18px
           font-family Segoe UI,Bold
           font-weight bold
@@ -167,6 +166,8 @@ export default {
           margin-right 50px
           justify-content center
           cursor default
+          &:last-child
+            margin 0
           &:hover
             transition all .5s ease
             color #e8e8e8
@@ -181,7 +182,6 @@ export default {
         color #FFFFFF
         background #30303A
         border-radius 5px
-        opacity 1
         justify-content center
         margin-right 96px
         transition all .5s ease
@@ -203,7 +203,6 @@ export default {
             &-svg
               width 50px
               height 50px
-              opacity 1
             &:hover
               transition all .5s ease
               border-radius 5px
@@ -212,8 +211,7 @@ export default {
   .nav-bot
     width 100%
     background #e8e8e8
-    opacity 1
-    margin-top 50px
+    margin-top 30px
     align-items center
     .step-wrapper
       padding-top 30px
@@ -233,7 +231,6 @@ export default {
           color #ffff
           border-radius 5px
           background: #30303a;
-          opacity 1
           justify-content center
         &-title
           font-size 18px
@@ -241,6 +238,5 @@ export default {
           font-weight bold
           word-break keep-all
           color #333333
-          opacity 1
           margin 19px 0 40px 0
 </style>
