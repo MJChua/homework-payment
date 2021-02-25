@@ -98,23 +98,27 @@ export default {
       &-product
         padding 13px 50px
         margin-bottom 6px
-        // justify-content space-between
+        justify-content space-between
+        align-items center
+        text-align left
         &-name
           word-break keep-all
-          widtdh 220px
-          text-align left
-          margin-right 60px
+          width 300px
+          // margin-right 60px
         &-quant
           width 105px
-          margin-right 90px
+          margin-right 20px
         &-price
-          // width 50px
+          width 100px
+          text-align center
           // margin-right 109px
         &-discount
-          width 26px
+          width 50px
+          text-align center
           // margin-right 124px
         &-real-pay
-          width 47px
+          width 100px
+          text-align center
           // margin-right 140px
         &-remove
           width 24px
